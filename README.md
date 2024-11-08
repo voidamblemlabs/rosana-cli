@@ -6,9 +6,9 @@ With **rosana-cli**, you can generate a new project with a recommended structure
 
 ## Features
 
--   **Create a New Project**: Generate a new Rosana-based app with a predefined structure.
--   **Update Existing Projects**: Update dependencies and project files to keep them in sync with the latest Rosana framework standards.
--   **Open in VSCode**: Optionally open the project in Visual Studio Code after creation or update.
+- **Create a New Project**: Generate a new Rosana-based app with a predefined structure.
+- **Update Existing Projects**: Update dependencies and project files to keep them in sync with the latest Rosana framework standards.
+- **Open in VSCode**: Optionally open the project in Visual Studio Code after creation or update.
 
 ---
 
@@ -32,7 +32,7 @@ Creates a new project based on the **Rosana.js** framework. The CLI will automat
 
 #### Arguments:
 
--   `<project-name>`: The name of the new project you want to create.
+- `<project-name>`: The name of the new project you want to create.
 
 #### Example:
 
@@ -44,7 +44,7 @@ This will create a new folder called `my-new-app` in the current directory with 
 
 #### Options:
 
--   `--open`: Optionally open the newly created project in Visual Studio Code.
+- `--open`: Optionally open the newly created project in Visual Studio Code.
 
 #### Example:
 
@@ -76,19 +76,27 @@ When you use `rs create`, the following structure will be set up for you:
 
 ```bash
 my-new-app/
-  ├── app/
-  │   ├── index.js
-  │   ├── components/
-  │   └── styles/
+  ├── .pages
+  │   ├── .ui/
+  │       ├── buttons.js
+  │       └── navigation.js
+  │   ├── index,js
+  │   └── about.js
+  ├── .src/
+  │   ├── public/
+  │   ├── styles/
+  │   └── scripts
   ├── node_modules/
   ├── package.json
+  ├── index.html
+  ├── App.js
   └── vite.config.js
 ```
 
--   **app/**: Contains the main application files, including the entry point (`index.js`), component definitions, and styles.
--   **node_modules/**: Automatically created after you install dependencies with npm.
--   **package.json**: The configuration file for your Node.js project, including dependencies, scripts, and metadata.
--   **vite.config.js**: Vite configuration for bundling the project.
+- **app/**: Contains the main application files, including the entry point (`index.js`), component definitions, and styles.
+- **node_modules/**: Automatically created after you install dependencies with npm.
+- **package.json**: The configuration file for your Node.js project, including dependencies, scripts, and metadata.
+- **vite.config.js**: Vite configuration for bundling the project.
 
 ---
 
