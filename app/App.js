@@ -1,12 +1,12 @@
-import { $createApp, $hashRouter } from "rosana";
+import { $createApp, $router } from "rosana";
 
-import { homePage } from "./.pages/index.js";
-import { aboutPage } from "./.pages/about.js";
+import homePage from "./.pages/index.js";
 
 const routes = [
-    { path: "index", component: homePage },
-    { path: "about", component: aboutPage },
+    { path: "/", component: homePage },
+    { path: "/about", component: () => import("./.pages/about.js") },
+    { path: "/user/:id", component: () => import("./.pages/user.js") },
 ];
-const router = $hashRouter(routes);
+const router = new $router(routes);
 
 window.app = $createApp(homePage).use(router).mount("#app");
