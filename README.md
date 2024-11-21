@@ -30,11 +30,11 @@ This will make the `rosana` command available from anywhere on your system.
 
 Creates a new project based on the **Rosana.js** framework. The CLI will automatically generate a new project folder with the recommended directory structure, example files, and basic configurations.
 
-#### Arguments:
+#### Arguments
 
 - `<project-name>`: The name of the new project you want to create.
 
-#### Example:
+#### Example
 
 ```bash
 rosana create my-new-app
@@ -42,11 +42,11 @@ rosana create my-new-app
 
 This will create a new folder called `my-new-app` in the current directory with the basic structure and necessary configuration files to start building with the **Rosana.js** framework.
 
-#### Options:
+#### Options
 
 - `--open`: Optionally open the newly created project in Visual Studio Code.
 
-#### Example:
+#### Example 2
 
 ```bash
 rosana create my-new-app --open
@@ -60,69 +60,13 @@ This command will create the app and then attempt to open it in VSCode (if VSCod
 
 Updates an existing Rosana-based project to the latest verosanaion of the framework, ensuring that dependencies and project files are up to date.
 
-#### Example:
+#### Example 3
 
 ```bash
 rosana update
 ```
 
 This will update the project’s dependencies and configurations to the latest recommended verosanaions of **Rosana.js**.
-
----
-
-## Files and Directories Created
-
-When you use `rosana create`, the following structure will be set up for you:
-
-```bash
-my-new-app/
-  ├── .pages
-  │   ├── .ui/
-  │       ├── buttons.js
-  │       └── navigation.js
-  │   ├── index,js
-  │   └── about.js
-  ├── .src/
-  │   ├── public/
-  │   ├── styles/
-  │   └── scripts
-  ├── node_modules/
-  ├── package.json
-  ├── index.html
-  ├── App.js
-  └── vite.config.js
-```
-
-- **app/**: Contains the main application files, including the entry point (`index.js`), component definitions, and styles.
-- **node_modules/**: Automatically created after you install dependencies with npm.
-- **package.json**: The configuration file for your Node.js project, including dependencies, scripts, and metadata.
-- **vite.config.js**: Vite configuration for bundling the project.
-
----
-
-## Development
-
-To start the project in development mode after creation:
-
-1. Navigate into the project folder:
-
-    ```bash
-    cd my-new-app
-    ```
-
-2. Install dependencies:
-
-    ```bash
-    npm install
-    ```
-
-3. Start the development server:
-
-    ```bash
-    npm run dev
-    ```
-
-This will launch the Vite development server and open your app in the browser.
 
 ---
 
