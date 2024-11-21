@@ -1,4 +1,17 @@
 {
     "name": "@roseframework/rosana-cli",
-    "version": "1.0.17"
+    "version": "1.0.17",
+    "description": "Rosana CLI tool for managing Roseframework projects",
+    "main": "index.js",
+    "bin": {
+        "rosana": "./index.js"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "exports": "./index.js",
+    "type": "module",
+    "keywords": ["roseframework", "cli", "tool"],
+    "author": "Your Name",
+    "license": "MIT"
 }
