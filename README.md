@@ -1,6 +1,6 @@
 # rosana-cli
 
-The **rosana-cli** tool is a command-line utility that helps you quickly set up projects using the **Rosana.js** framework. It automates the creation and updating of Rosana-based applications, providing an easy-to-use interface for developers.
+The **rosana-cli** tool is a command-line utility that helps you quickly set up projects using the **Rosana.js** framework. It automates the creation and updating of Rosana-based applications, providing an easy-to-use interface for developerosana.
 
 With **rosana-cli**, you can generate a new project with a recommended structure, complete with example patterns, and update an existing project.
 
@@ -20,13 +20,13 @@ You can install **rosana-cli** globally on your machine for easy access. To inst
 npm install -g rosana-cli
 ```
 
-This will make the `rs` command available from anywhere on your system.
+This will make the `rosana` command available from anywhere on your system.
 
 ---
 
 ## Usage
 
-### `rs create <project-name>`
+### `rosana create <project-name>`
 
 Creates a new project based on the **Rosana.js** framework. The CLI will automatically generate a new project folder with the recommended directory structure, example files, and basic configurations.
 
@@ -37,7 +37,7 @@ Creates a new project based on the **Rosana.js** framework. The CLI will automat
 #### Example:
 
 ```bash
-rs create my-new-app
+rosana create my-new-app
 ```
 
 This will create a new folder called `my-new-app` in the current directory with the basic structure and necessary configuration files to start building with the **Rosana.js** framework.
@@ -49,30 +49,30 @@ This will create a new folder called `my-new-app` in the current directory with 
 #### Example:
 
 ```bash
-rs create my-new-app --open
+rosana create my-new-app --open
 ```
 
 This command will create the app and then attempt to open it in VSCode (if VSCode is installed and available in the system path).
 
 ---
 
-### `rs update`
+### `rosana update`
 
-Updates an existing Rosana-based project to the latest version of the framework, ensuring that dependencies and project files are up to date.
+Updates an existing Rosana-based project to the latest verosanaion of the framework, ensuring that dependencies and project files are up to date.
 
 #### Example:
 
 ```bash
-rs update
+rosana update
 ```
 
-This will update the project’s dependencies and configurations to the latest recommended versions of **Rosana.js**.
+This will update the project’s dependencies and configurations to the latest recommended verosanaions of **Rosana.js**.
 
 ---
 
 ## Files and Directories Created
 
-When you use `rs create`, the following structure will be set up for you:
+When you use `rosana create`, the following structure will be set up for you:
 
 ```bash
 my-new-app/
